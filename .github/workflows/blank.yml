@@ -14,6 +14,13 @@ on:
       perform_deploy:
         required: true
         type: boolean
+      environment:
+        type: choice
+        description: Select the environment
+        required: true
+        options:
+          - development
+          - test-2
 
 jobs:
  deploy:
